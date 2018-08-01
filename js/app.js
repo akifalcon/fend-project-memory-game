@@ -8,7 +8,6 @@ const cardList = ['fa fa-diamond', 'fa fa-paper-plane-o', 'fa fa-anchor', 'fa fa
  *   - loop through each card and create its HTML
  *   - add each card's HTML to the page
  */
-
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -24,6 +23,15 @@ function shuffle(array) {
     return array;
 }
 
+//Shuffles list of cards
+shuffle(cardList);
+
+//Updates card deck that is displayed using shuffled card list
+for (i = 0; i < cardList.length; i++) {
+  const currCard = document.getElementsByClassName('card')[i];
+
+  currCard.children[0].className = cardList[i];
+}
 
 /*
  * set up the event listener for a card. If a card is clicked:
