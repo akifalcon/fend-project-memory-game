@@ -87,6 +87,7 @@ function openCardCount (list) {
     twoCards(list);
     list.length = 0;
     countUp();
+    starCount();
   }
 }
 
