@@ -57,6 +57,19 @@ function addCard (crd) {
   openCardList.push(crd);
 }
 
+//Tests whether or not cards in openCardList have the same picture
+function matchTest (list) {
+  const cardOne = list[0].firstElementChild.classList.value;
+  const cardTwo = list[1].firstElementChild.classList.value;
+
+  if (cardOne == cardTwo) {
+    return true;
+  }
+    else {
+      return false;
+    }
+}
+
 //Store deck elements in a variable
 const deck = document.getElementsByClassName('deck')[0];
 
