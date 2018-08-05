@@ -104,11 +104,11 @@ function countUp () {
 
 //Function reduces number of stars based on move count
 function starCount () {
-  if (counter.textContent == 16) {
+  if (counter.textContent == 17) {
     starDown();
-  } else if (counter.textContent == 20) {
+  } else if (counter.textContent == 21) {
     starDown();
-  } else if (counter.textContent == 24) {
+  } else if (counter.textContent == 25) {
     starDown();
   }
 }
