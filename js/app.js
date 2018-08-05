@@ -92,6 +92,14 @@ function openCardCount (list) {
 //Store deck elements in a variable
 const deck = document.querySelector('.deck');
 
+//Stores move counter number in a variable
+const counter = document.querySelector('.moves');
+
+//Function to increase move counter
+function countUp () {
+  counter.textContent = Number(counter.textContent) + 1;
+}
+
 //Event listener to run showCard function on clicked card
 deck.addEventListener('click', function (evt) {
   if (openCardList.length < 2) {
