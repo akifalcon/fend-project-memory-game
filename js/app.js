@@ -49,6 +49,14 @@ function showCard (evt) {
   evt.classList.add('open');
 }
 
+//Array to hold list of open cards
+const openCardList = [];
+
+//Adds selected card to openCardList
+function addCard (crd) {
+  openCardList.push(crd);
+}
+
 //Store deck elements in a variable
 const deck = document.getElementsByClassName('deck')[0];
 
