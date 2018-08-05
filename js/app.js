@@ -94,9 +94,11 @@ const deck = document.getElementsByClassName('deck')[0];
 
 //Event listener to run showCard function on clicked card
 deck.addEventListener('click', function (evt) {
-  if (evt.target.nodeName === "LI") {
-    showCard (evt.target);
-    addCard (evt.target);
-    setTimeout(openCardCount, 1500, openCardList);
+  if (openCardList.length < 2) {
+    if (evt.target.nodeName === "LI") {
+      showCard (evt.target);
+      addCard (evt.target);
+      setTimeout(openCardCount, 1500, openCardList);
+    }
   }
 })
