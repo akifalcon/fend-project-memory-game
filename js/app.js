@@ -85,6 +85,7 @@ function twoCards (list) {
 function openCardCount (list) {
   if (list.length == 2) {
     twoCards(list);
+    list.length = 0;
   }
 }
 
