@@ -1,3 +1,6 @@
+//Store start time of game
+const startTime = new Date();
+
 /*
  * Create a list that holds all of your cards
  */
@@ -139,10 +142,13 @@ function starDown () {
 
 //Function to display alert message when matches are complete
 function success () {
+  const endTime = new Date();
+  const totalTime = Math.round((endTime - startTime)/1000);
+
   if (starList.length == 1) {
-    window.alert("Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " star!");
+    window.alert("Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " star, in " + totalTime + " seconds!");
   } else {
-    window.alert("Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " stars!");
+    window.alert("Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " stars, in " + totalTime + " seconds!");
   }
 }
 
