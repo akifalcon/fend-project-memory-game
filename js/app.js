@@ -117,3 +117,11 @@ deck.addEventListener('click', function (evt) {
     }
   }
 })
+
+//Store reset button in a variable
+const resetButton = document.querySelector('.restart');
+
+//Event listener to reset board
+resetButton.addEventListener('click', function (evt) {
+  location.reload();
+})
