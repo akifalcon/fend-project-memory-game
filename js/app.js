@@ -180,3 +180,11 @@ const resetButton = document.querySelector('.restart');
 resetButton.addEventListener('click', function (evt) {
   location.reload();
 })
+
+//Store play again button in a variable
+const finishButton = document.querySelector('button');
+
+//Event listener to reset board after game ends
+finishButton.addEventListener('click', function (evt) {
+  location.reload();
+})
