@@ -83,7 +83,7 @@ function twoCards (list) {
 
 //Function that counts number of open cards, handles matching if two cards are open
 function openCardCount (list) {
-  if (list.length == 2) }{
+  if (list.length == 2) {
     twoCards(list);
   }
 }
@@ -95,5 +95,7 @@ const deck = document.getElementsByClassName('deck')[0];
 deck.addEventListener('click', function (evt) {
   if (evt.target.nodeName === "LI") {
     showCard (evt.target);
+    addCard (evt.target);
+    openCardCount(openCardList);
   }
 })
