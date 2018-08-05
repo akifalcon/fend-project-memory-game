@@ -87,7 +87,7 @@ h1 {
 
 .score-panel {
     text-align: left;
-    width: 345px;
+    width: 500px;
     margin-bottom: 10px;
 }
 
@@ -96,6 +96,7 @@ h1 {
     padding: 0;
     display: inline-block;
     margin: 0 5px 0 0;
+    width: 25%;
 }
 
 .score-panel .stars li {
@@ -103,7 +104,20 @@ h1 {
     display: inline-block;
 }
 
-.score-panel .restart {
-    float: right;
+.score-panel .move-count {
+    display: inline-block;
+    width: 25%;
+}
+
+.score-panel .timer {
+    display: inline-block;
     cursor: pointer;
+    width: 25%;
+}
+
+.score-panel .restart {
+    text-align: right;
+    display: inline-block;
+    cursor: pointer;
+    width: 22%;
 }
