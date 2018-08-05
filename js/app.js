@@ -101,6 +101,17 @@ function countUp () {
   counter.textContent = Number(counter.textContent) + 1;
 }
 
+//Function reduces number of stars based on move count
+function starCount () {
+  if counter.textContent == 16) {
+    starDown();
+  } else (counter.textContent == 20) {
+    starDown();
+  } else (counter.textContent == 24) {
+    starDown();
+  }
+}
+
 //Event listener to run showCard function on clicked card
 deck.addEventListener('click', function (evt) {
   if (openCardList.length < 2) {
