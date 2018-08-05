@@ -118,9 +118,7 @@ function starCount () {
     starDown();
   } else if (counter.textContent == 21) {
     starDown();
-  } else if (counter.textContent == 25) {
-    starDown();
-  }
+  } 
 }
 
 //Event listener to run showCard function on clicked card
