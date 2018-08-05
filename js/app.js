@@ -45,8 +45,8 @@ for (i = 0; i < cardList.length; i++) {
 
 //Function to toggle class of selected card
 function showCard (evt) {
-  evt.classList.toggle('show');
-  evt.classList.toggle('open');
+  evt.classList.add('show');
+  evt.classList.add('open');
 }
 
 //Store deck elements in a variable
