@@ -48,3 +48,13 @@ function showCard (evt) {
   evt.classList.toggle('show');
   evt.classList.toggle('open');
 }
+
+//Store deck elements in a variable
+const deck = document.getElementsByClassName('deck')[0];
+
+//Event listener to run showCard function on clicked card
+deck.addEventListener('click', function (evt) {
+  if (evt.target.nodeName === "LI") {
+    showCard (evt.target);
+  }
+})
