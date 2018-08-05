@@ -90,7 +90,7 @@ function openCardCount (list) {
 }
 
 //Store deck elements in a variable
-const deck = document.getElementsByClassName('deck')[0];
+const deck = document.querySelector('.deck');
 
 //Event listener to run showCard function on clicked card
 deck.addEventListener('click', function (evt) {
