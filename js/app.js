@@ -118,8 +118,12 @@ deck.addEventListener('click', function (evt) {
   }
 })
 
+//Store star elements in array
+const starList = document.getElementsByClassName('fa-star');
+
+//Function to display alert message when matches are complete
 function success () {
-  window.alert("Congratulations! You finished in " + counter.textContent + " moves, with a score of x stars!");
+  window.alert("Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " stars!");
 }
 
 //Event listener to display message when all matches are made
