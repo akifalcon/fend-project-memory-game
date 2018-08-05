@@ -97,6 +97,6 @@ deck.addEventListener('click', function (evt) {
   if (evt.target.nodeName === "LI") {
     showCard (evt.target);
     addCard (evt.target);
-    openCardCount(openCardList);
+    setTimeout(openCardCount, 1500, openCardList);
   }
 })
