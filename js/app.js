@@ -151,7 +151,7 @@ deck.addEventListener('click', function (evt) {
 
   if (evt.target.nodeName === "LI") {
     if (matchedCards.length == 16) {
-      setTimeout(console.log, 1600, "You did it!");
+      setTimeout(success, 1600);
     }
   }
 })
