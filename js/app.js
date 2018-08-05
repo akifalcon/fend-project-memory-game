@@ -81,6 +81,13 @@ function twoCards (list) {
   }
 }
 
+//Function that counts number of open cards, handles matching if two cards are open
+function openCardCount (list) {
+  if (list.length == 2) }{
+    twoCards(list);
+  }
+}
+
 //Store deck elements in a variable
 const deck = document.getElementsByClassName('deck')[0];
 
