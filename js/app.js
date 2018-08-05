@@ -118,6 +118,16 @@ deck.addEventListener('click', function (evt) {
   }
 })
 
+deck.addEventListener('click', function (evt) {
+  const matchedCards = document.getElementsByClassName('show');
+
+  if (evt.target.nodeName === "LI") {
+    if (matchedCards.length == 16) {
+      setTimeout(console.log, 1600, "You did it!");
+    }
+  }
+})
+
 //Store reset button in a variable
 const resetButton = document.querySelector('.restart');
 
