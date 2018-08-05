@@ -96,9 +96,15 @@ const deck = document.getElementsByClassName('deck')[0];
 deck.addEventListener('click', function (evt) {
   if (openCardList.length < 2) {
     if (evt.target.nodeName === "LI") {
-      showCard (evt.target);
-      addCard (evt.target);
-      setTimeout(openCardCount, 1500, openCardList);
+      if (evt.target.classList[2] == 'open') {
+      } else {
+        if (evt.target.classList[3] == 'match') {
+        } else {
+          showCard (evt.target);
+          addCard (evt.target);
+          setTimeout(openCardCount, 1500, openCardList);
+        }
+      }
     }
   }
 })
