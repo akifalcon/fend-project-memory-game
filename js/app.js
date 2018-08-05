@@ -1,6 +1,13 @@
 //Store start time of game
 const startTime = new Date();
 
+function newTime () {
+   const counter = document.querySelector(".time");
+   counter.textContent = Number(counter.textContent) + 1;
+}
+
+setInterval(newTime, 1000);
+
 /*
  * Create a list that holds all of your cards
  */
