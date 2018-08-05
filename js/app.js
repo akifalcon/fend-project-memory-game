@@ -118,6 +118,11 @@ deck.addEventListener('click', function (evt) {
   }
 })
 
+function success () {
+  window.alert("Congratulations! You finished in " + counter.textContent + " moves, with a score of x stars!");
+}
+
+//Event listener to display message when all matches are made
 deck.addEventListener('click', function (evt) {
   const matchedCards = document.getElementsByClassName('show');
 
