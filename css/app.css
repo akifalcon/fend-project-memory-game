@@ -126,6 +126,7 @@ h1 {
  * Styles for the modal
  */
 .modal {
+  display: none;
   background-color: teal;
   z-index: 1;
   width: 100%;
