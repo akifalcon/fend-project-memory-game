@@ -151,11 +151,12 @@ function starDown () {
 function success () {
   const endTime = new Date();
   const totalTime = Math.round((endTime - startTime)/1000);
+  const endMessage = document.querySelector(".congrats");
 
   if (starList.length == 1) {
-    window.alert("Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " star, in " + totalTime + " seconds!");
+    endMessage.textContent = "Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " star, in " + totalTime + " seconds!";
   } else {
-    window.alert("Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " stars, in " + totalTime + " seconds!");
+    endMessage.textContent = "Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " stars, in " + totalTime + " seconds!";
   }
 }
 
