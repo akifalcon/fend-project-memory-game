@@ -70,6 +70,18 @@ function matchTest (list) {
     }
 }
 
+//Function that adds match class to cards if matched, turns cards over again if not matched
+function twoCards (list) {
+  if (matchTest(list)) {
+    list[0].classList.add('match');
+    list[1].classList.add('match');
+  } else {
+    console.log("They don't match!")
+    list[0].classList.remove('open', 'show');
+    list[1].classList.remove('open', 'show');
+  }
+}
+
 //Store deck elements in a variable
 const deck = document.getElementsByClassName('deck')[0];
 
