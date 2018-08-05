@@ -151,13 +151,15 @@ function starDown () {
 function success () {
   const endTime = new Date();
   const totalTime = Math.round((endTime - startTime)/1000);
-  const endMessage = document.querySelector(".congrats");
+  const endMessage = document.querySelector('.congrats');
 
   if (starList.length == 1) {
     endMessage.textContent = "Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " star, in " + totalTime + " seconds!";
   } else {
     endMessage.textContent = "Congratulations! You finished in " + counter.textContent + " moves, with a score of " + starList.length + " stars, in " + totalTime + " seconds!";
   }
+
+  document.querySelector('.modal').style.display = "block";
 }
 
 //Event listener to display message when all matches are made
